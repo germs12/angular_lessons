@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script src="/src/angular.min.js"></script>
+    <script src="index4.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <h1>Names in the {{lastname | uppercase}} Family:</h1>
+
+      <ul>
+        <li ng-repeat="x in names | orderBy">{{x}} {{lastname}}</li>
+      </ul>
+
+    </div>
+  </body>
+</html>
